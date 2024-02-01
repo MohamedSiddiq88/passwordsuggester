@@ -45,7 +45,10 @@ function App() {
       <div className='password-display-container'>
         {password.map((ele)=>(
           
-            <div className='password-container' onClick={()=>window.navigator.clipboard.writeText(ele)}>{ele}</div>
+            <div className='password-container tooltip' onClick={()=>window.navigator.clipboard.writeText(ele)}>
+              {ele}
+              <span className="tooltiptext">Tooltip text</span>
+            </div>
 
          
         ))}
