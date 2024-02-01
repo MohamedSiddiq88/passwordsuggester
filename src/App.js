@@ -3,6 +3,7 @@ import './App.css';
 import Input from './components/Input';
 import Submit from './components/Submit';
 import { useState } from 'react';
+import PasswordContainer from './components/PasswordContainer';
 
 function App() {
   const [firstName, setFirstName] = useState("");
@@ -14,6 +15,7 @@ function App() {
   const [favNumber, setFavNumber] = useState("");
   const [lengthOfPass, setLengthOfPass] = useState(0);
   const [password,setPassword] = useState([]);
+  
   return (
     <div className='container main'>
     <div className='form-div'>
@@ -48,10 +50,7 @@ function App() {
       <div className='password-display-container'>
         {password.map((ele)=>(
           
-            <div className='password-container tooltip-1' onClick={()=>window.navigator.clipboard.writeText(ele)}>
-              {ele}
-              <span className="tooltip-1text">Click to copy</span>
-            </div>
+            <PasswordContainer ele={ele}></PasswordContainer>
 
          
         ))}
