@@ -42,12 +42,15 @@ function App() {
       setPassword={setPassword}
       lengthOfPass={lengthOfPass}
       ></Submit>
+
+
+
       <div className='password-display-container'>
         {password.map((ele)=>(
           
-            <div className='password-container tooltip' onClick={()=>window.navigator.clipboard.writeText(ele)}>
+            <div className='password-container tooltip-1' onClick={()=>window.navigator.clipboard.writeText(ele)}>
               {ele}
-              <span className="tooltiptext">Tooltip text</span>
+              <span className="tooltip-1text">Click to copy</span>
             </div>
 
          

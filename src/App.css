@@ -39,16 +39,16 @@ button{
   margin-bottom: 1rem;
 }
 
-/* tooltip */
+/* tooltip-1 */
 
-.tooltip {
+.tooltip-1 {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+  /* display: inline-block; */
+  /* border-bottom: 1px dotted black; */
   z-index: 100;
 }
 
-.tooltip .tooltiptext {
+.tooltip-1 .tooltip-1text {
   visibility: hidden;
   width: 120px;
   background-color: #555;
@@ -65,7 +65,7 @@ button{
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-1 .tooltip-1text::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -76,7 +76,7 @@ button{
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-1:hover .tooltip-1text {
   visibility: visible;
   opacity: 1;
 }
